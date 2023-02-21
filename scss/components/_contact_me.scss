@@ -5,4 +5,10 @@
    min-height: 100vh;
    max-height: 100vh;
    overflow: hidden;
+
+   .container {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+   }
 }
