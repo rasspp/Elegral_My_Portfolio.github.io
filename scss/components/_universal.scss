@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+/* ? !== <==>Css Reset<==> !== */
+@include customCssReset();
+
+body {
+   color: $textColor;
+   font-family: sans-serif;
+   background-color: $primaryColor;
+   scroll-behavior: auto !important;
+}
+
+/* * ===Class Universal=== * */
+// neurlight === neumorphism + border light
+.neurlight {
+   border-radius: 8px;
+   background-color: $primaryColor;
+   border: 2px solid $secondColor;
+   box-shadow: -20px 20px 39px #121c21, 20px -20px 39px #1e2e35;
+}
+
+/* todo !== ==>Boostrap Custom<== !== */
+.container-fluid {
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+.side {
+   position: relative;
+   @include flexCenter();
+   flex-wrap: wrap;
+}
+
+.title-page {
+   position: absolute;
+   top: -10px;
+   padding-top: 10px;
+   text-align: center;
+   color: $primaryColor;
+   background-color: $secondColor;
+   font-weight: 600;
+   border-radius: 8px;
+}

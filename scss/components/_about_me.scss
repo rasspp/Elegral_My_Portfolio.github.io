@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+/* ? !== <==>About Me<==> !== */
+.about-me {
+   min-height: 100vh;
+   max-height: 100vh;
+   overflow: hidden;
+
+   .side {
+      position: relative;
+   }
+
+   .container {
+      position: absolute;
+      top: 13%;
+      z-index: 100;
+      @include flexCenter();
+      flex-wrap: wrap;
+      gap: 10px;
+
+      max-width: 50%;
+      margin-top: 50px;
+      overflow: scroll;
+
+      > div {
+         // position: relative;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         z-index: 1000;
+
+         background-color: transparent;
+         padding: 5px;
+         box-shadow: none;
+         box-sizing: border-box;
+
+         div {
+            white-space: nowrap;
+            padding: 3px 8px;
+            border-radius: 5px;
+         }
+
+         .active {
+            color: $primaryColor;
+            background-color: $secondColor;
+         }
+      }
+   }
+
+   .content {
+      min-height: 150px;
+      padding: 10px 15px;
+      color: $textColor;
+   }
+}

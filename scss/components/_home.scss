@@ -1,0 +1,64 @@
+@use "../abstracts" as *;
+
+/* ? !== <==>Home / Jumbotron<==> !== */
+.home {
+   @include flexCenter();
+
+   min-height: 100vh;
+   max-height: 100vh;
+   box-sizing: border-box;
+   overflow: auto;
+
+   .side-left {
+      box-sizing: border-box;
+   }
+
+   .side-right {
+      @include flexCenter();
+   }
+
+   .title {
+      font-size: $tFS;
+   }
+   .sub-title {
+      font-size: $stFS;
+      margin: 0;
+   }
+
+   .highlight {
+      @include flexCenter();
+
+      height: 50px;
+      color: $primaryColor;
+      font-size: 0.6em;
+      font-weight: bold;
+      background-color: $secondColor;
+      border-radius: 24px;
+      padding: 0 20px;
+      margin-left: 10px;
+   }
+
+   .content {
+      width: 100%;
+      height: 100%;
+      padding: 25px;
+   }
+
+   .hero {
+      @include flexCenter();
+      flex-wrap: wrap;
+      gap: 0px;
+
+      width: 300px;
+      height: 300px;
+      background-image: url("");
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 50%;
+
+      .box {
+         min-height: 50px;
+         background-color: transparent;
+      }
+   }
+}
