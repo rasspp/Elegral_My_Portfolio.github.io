@@ -7,10 +7,55 @@
    overflow: hidden;
 
    .container {
-      width: 100px;
-      height: 100px;
-      background-color: blue;
+      max-width: 700px;
+      min-height: 300px;
+      padding: 20px 10px;
+   }
 
-      font-size: 12px;
+   .form {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .box {
+      @include flexCenter();
+      flex-direction: column;
+
+      margin-bottom: 20px;
+
+      > label {
+         width: 90%;
+         height: 25px;
+         text-align: center;
+         color: $primaryColor;
+         font-weight: bold;
+         background-color: $secondColor;
+         border-top: 2px solid $secondColor;
+         border-left: 2px solid $secondColor;
+         border-right: 2px solid $secondColor;
+         border-radius: 8px 8px 0 0;
+      }
+
+      > input,
+      > textarea {
+         width: 90%;
+         height: 35px;
+         color: $secondColor;
+         font-size: 14px;
+         letter-spacing: 1px;
+         background-color: $primaryColor;
+         padding: 10px;
+         border: 2px solid $secondColor;
+         outline: none;
+         border-radius: 0 0 8px 8px;
+      }
+
+      textarea {
+         height: 100px;
+
+         &::-webkit-scrollbar {
+            display: none;
+         }
+      }
    }
 }
