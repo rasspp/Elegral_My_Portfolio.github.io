@@ -8,8 +8,6 @@
 
    .container {
       @include flexCenter();
-
-      // background-color: #fff;
    }
 
    .slider-custom {
@@ -18,7 +16,6 @@
       .slides {
          position: relative;
          top: 0;
-         // @include flexCenter();
 
          background-color: #aaa;
          user-select: none;
@@ -53,25 +50,6 @@
          background-size: contain;
          user-select: none;
       }
-
-      // .prev,
-      // .next {
-      //    cursor: pointer;
-      //    position: absolute;
-      //    top: 40%;
-
-      //    width: auto;
-      //    color: $secondColor;
-      //    font-size: 15px;
-      //    padding: 10px 15px;
-      //    background-color: $primaryColor;
-      //    border-radius: 8px;
-      //    transition: 0.6 ease;
-      // }
-
-      // .next {
-      //    right: 0;
-      // }
    }
 }
 
