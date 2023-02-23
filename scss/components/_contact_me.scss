@@ -57,5 +57,25 @@
             display: none;
          }
       }
+
+      .box2 {
+         @include flexCenter();
+
+         width: 90%;
+         height: 125px;
+         border-radius: 8px;
+         border: 2px solid $secondColor;
+      }
+
+      button {
+         width: 100px;
+         height: 50px;
+         color: $primaryColor;
+         font-weight: bold;
+         border-radius: 8px;
+         background-color: $secondColor;
+         margin: auto;
+         border: 2px solid $secondColor;
+      }
    }
 }
