@@ -375,4 +375,77 @@ body {
   min-height: 100vh;
   max-height: 100vh;
   overflow: hidden;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 20px;
+}
+.footer .second-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  border: 2px solid #66ef4b;
+}
+.footer .second-container .icon {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 30%;
+  height: 50px;
+}
+.footer .second-container .icon > p {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid blue;
+}
+.footer .second-container .link {
+  width: 75%;
+  height: 50px;
+  padding: 10px;
+  border-left: 2px solid aqua;
+}
+.footer .dropup {
+  width: 25%;
+  position: relative;
+  display: inline-block;
+}
+.footer .dropbtn {
+  width: 100%;
+  background-color: #3498db;
+  color: #18252b;
+  background-color: #66ef4b;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.footer .dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.footer .dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.footer .dropup-content a:hover {
+  background-color: #ddd;
+}
+.footer .dropup:hover .dropup-content {
+  display: block;
+}
+.footer .dropup:hover .dropbtn {
+  background-color: #2980b9;
 }/*# sourceMappingURL=main.css.map */
