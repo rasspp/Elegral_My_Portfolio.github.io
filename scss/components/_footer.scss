@@ -54,7 +54,6 @@
 
    .dropbtn {
       width: 100%;
-      background-color: #3498db;
       color: $primaryColor;
       font-size: 16px;
       font-weight: bold;
@@ -68,8 +67,11 @@
       display: none;
       position: absolute;
       bottom: 50px;
-      background-color: #f1f1f1;
+
       min-width: 160px;
+      background-color: $secondColor;
+      border-radius: 8px;
+
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
    }
@@ -90,6 +92,6 @@
    }
 
    .dropup:hover .dropbtn {
-      background-color: #2980b9;
+      background-color: dark(20%, $secondColor);
    }
 }
