@@ -17,6 +17,7 @@
       @include flexCenter();
 
       width: 85%;
+      border-radius: 8px;
       border: 2px solid $secondColor;
 
       .icon {
@@ -41,8 +42,6 @@
          width: 75%;
          height: 50px;
          padding: 10px;
-
-         border-left: 2px solid aqua;
       }
    }
 
@@ -57,10 +56,12 @@
       width: 100%;
       background-color: #3498db;
       color: $primaryColor;
+      font-size: 16px;
+      font-weight: bold;
       background-color: $secondColor;
       padding: 16px;
-      font-size: 16px;
       border: none;
+      border-radius: 5px 0 0 5px;
    }
 
    .dropup-content {
