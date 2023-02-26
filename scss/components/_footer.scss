@@ -72,10 +72,11 @@
       padding: 12px 16px;
       transition: 0.3s;
 
-      > img {
+      > i {
          width: 15%;
          height: 100%;
-         color: red;
+         font-size: 20px;
+         transition: 0.3s;
       }
 
       p {
