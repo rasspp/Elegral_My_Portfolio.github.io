@@ -61,7 +61,7 @@
 
    .dropup-content button {
       @include flexCenter();
-      flex-direction: row;
+      flex-wrap: wrap;
 
       width: 100%;
       color: black;
@@ -70,12 +70,18 @@
       background-color: $secondColor;
       border: none;
       padding: 12px 16px;
-      display: block;
       transition: 0.3s;
 
       > img {
-         width: 10px;
-         height: 10px;
+         width: 15%;
+         height: 100%;
+         color: red;
+      }
+
+      p {
+         width: 85%;
+         height: 100%;
+         margin: 0;
       }
    }
 
