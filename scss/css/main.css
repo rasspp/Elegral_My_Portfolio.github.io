@@ -426,7 +426,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   color: black;
   text-decoration: none;
@@ -434,12 +434,17 @@ body {
   background-color: #66ef4b;
   border: none;
   padding: 12px 16px;
-  display: block;
   transition: 0.3s;
 }
 .footer .dropup-content button > img {
-  width: 10px;
-  height: 10px;
+  width: 15%;
+  height: 100%;
+  color: red;
+}
+.footer .dropup-content button p {
+  width: 85%;
+  height: 100%;
+  margin: 0;
 }
 .footer .dropup-content button:active {
   letter-spacing: 2px;
