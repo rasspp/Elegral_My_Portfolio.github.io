@@ -86,23 +86,9 @@
       }
    }
 
-   .copy {
-      background-color: $secondColor;
-      transition: 0.2s;
-
-      svg {
-         width: 30px;
-         height: 30px;
-         color: $primaryColor;
-         transition: 0.2s;
-      }
-
-      &:active {
-         background-color: $primaryColor;
-      }
-
-      &:active svg {
-         color: $secondColor;
+   .site-link {
+      i {
+         font-size: 20px;
       }
    }
 
@@ -135,7 +121,7 @@
       justify-content: start;
 
       p {
-         width: 65%;
+         width: 72%;
          height: 100%;
          margin: 0;
          padding-left: 10px;
@@ -148,16 +134,47 @@
          display: none;
       }
 
-      > div {
+      .copy,
+      .site-link {
          @include flexCenter();
 
-         width: 20%;
+         width: 15%;
          height: 100%;
       }
 
       .copy {
          border-right: 2px solid $secondColor;
          border-left: 2px solid $secondColor;
+      }
+
+      .copy {
+         color: $primaryColor;
+         background-color: $secondColor;
+         transition: 0.2s;
+
+         svg {
+            width: 20px;
+            height: 20px;
+            color: $primaryColor;
+            transition: 0.2s;
+         }
+
+         &:active {
+            background-color: $primaryColor;
+         }
+
+         &:active svg {
+            color: $secondColor;
+         }
+      }
+
+      .site-link {
+         color: $secondColor;
+
+         &:active {
+            color: $primaryColor;
+            background-color: $secondColor;
+         }
       }
    }
 }
