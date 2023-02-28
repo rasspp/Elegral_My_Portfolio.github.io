@@ -447,6 +447,22 @@ body {
   height: 100%;
   margin: 0;
 }
+.footer .copy {
+  background-color: #66ef4b;
+  transition: 0.2s;
+}
+.footer .copy svg {
+  width: 30px;
+  height: 30px;
+  color: #18252b;
+  transition: 0.2s;
+}
+.footer .copy:active {
+  background-color: #18252b;
+}
+.footer .copy:active svg {
+  color: #66ef4b;
+}
 .footer .dropup-content button:active {
   letter-spacing: 2px;
 }

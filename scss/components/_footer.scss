@@ -86,6 +86,26 @@
       }
    }
 
+   .copy {
+      background-color: $secondColor;
+      transition: 0.2s;
+
+      svg {
+         width: 30px;
+         height: 30px;
+         color: $primaryColor;
+         transition: 0.2s;
+      }
+
+      &:active {
+         background-color: $primaryColor;
+      }
+
+      &:active svg {
+         color: $secondColor;
+      }
+   }
+
    .dropup-content button:active {
       letter-spacing: 2px;
    }
