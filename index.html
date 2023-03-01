@@ -23,23 +23,42 @@
          <!-- ?-------- Navbar -->
          <nav class="navbar">
             <aside class="nav-second">
-               <ul>
-                  <li>
-                     <a href="#home"><img src="./assets/svg/nav/home.svg" alt="home" /></a>
-                  </li>
-                  <li>
-                     <a href="#about-me"><img src="./assets/svg/nav/about_me.svg" alt="about us" /></a>
-                  </li>
-                  <li>
-                     <a href="#skills"><img src="./assets/svg/nav/skills.svg" alt="Skills" /></a>
-                  </li>
-                  <li>
-                     <a href="#contact"><img src="./assets/svg/nav/contact_me.svg" alt="Contact Me" /></a>
-                  </li>
-                  <li>
-                     <a href="#footer"><img src="./assets/svg/nav/footer.svg" alt="Footer" /></a>
-                  </li>
-               </ul>
+               <div class="navigation">
+                  <ul>
+                     <li class="list active">
+                        <a href="#">
+                           <span class="icon"><ion-icon class="nav-icon" name="home-outline"></ion-icon></span>
+                           <span class="text">Home</span>
+                        </a>
+                     </li>
+                     <li class="list">
+                        <a href="#">
+                           <span class="icon"><ion-icon class="nav-icon" name="person-outline"></ion-icon></span>
+                           <span class="text">Profile</span>
+                        </a>
+                     </li>
+                     <li class="list">
+                        <a href="#">
+                           <span class="icon"><ion-icon class="nav-icon" name="chatbubble-outline"></ion-icon></span>
+                           <span class="text">Messages</span>
+                        </a>
+                     </li>
+                     <li class="list">
+                        <a href="#">
+                           <span class="icon"><ion-icon class="nav-icon" name="build-outline"></ion-icon></span>
+
+                           <span class="text">Skills</span>
+                        </a>
+                     </li>
+                     <li class="list">
+                        <a href="#">
+                           <span class="icon"><ion-icon class="nav-icon" name="settings-outline"></ion-icon></span>
+                           <span class="text">Settings</span>
+                        </a>
+                     </li>
+                     <div class="indicator"></div>
+                  </ul>
+               </div>
             </aside>
          </nav>
          <!-- !-------- Akhir Navbar -->
@@ -181,9 +200,8 @@
                      </div>
                      <div class="link">
                         <p>https://github.com/rassppdhfkshjkdhfsdkfhk</p>
-                        <div class="copy">
+                        <div class="copy" title="copy link">
                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                              <title>Copy</title>
                               <rect
                                  x="128"
                                  y="128"
@@ -224,9 +242,16 @@
          crossorigin="anonymous"
       ></script>
 
+      <!-- Ionicons -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
       <!-- MY JS -->
       <script type="module" src="./public/js/main.js"></script>
       <script src="./public/js/slider.js"></script>
+
+      <!-- Navigation JS -->
+      <script src="./public/js/navigation.js"></script>
    </body>
 </html>
 
