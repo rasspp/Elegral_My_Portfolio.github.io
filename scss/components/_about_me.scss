@@ -11,6 +11,7 @@
    }
 
    .container {
+      cursor: pointer;
       position: absolute;
       top: 13%;
       z-index: 100;
@@ -20,7 +21,11 @@
 
       max-width: 50%;
       margin-top: 50px;
-      overflow: scroll;
+      overflow: auto;
+
+      // &::-webkit-scrollbar {
+      //    display: none;
+      // }
 
       > div {
          // position: relative;
