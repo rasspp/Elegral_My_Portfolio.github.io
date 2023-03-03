@@ -143,13 +143,10 @@
       }
 
       .copy {
-         border-right: 2px solid $secondColor;
-         border-left: 2px solid $secondColor;
-      }
-
-      .copy {
          color: $primaryColor;
          background-color: $secondColor;
+         border-right: 2px solid $secondColor;
+         border-left: 2px solid $secondColor;
          transition: 0.2s;
 
          svg {
@@ -170,6 +167,9 @@
 
       .site-link {
          color: $secondColor;
+         // border-left: 2px solid $primaryColor;
+         border: 2px solid $primaryColor;
+         border-radius: 0 6px 6px 0;
 
          &:active {
             color: $primaryColor;

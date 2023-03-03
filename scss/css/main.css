@@ -566,12 +566,10 @@ body {
   height: 100%;
 }
 .footer .link .copy {
-  border-right: 2px solid #66ef4b;
-  border-left: 2px solid #66ef4b;
-}
-.footer .link .copy {
   color: #18252b;
   background-color: #66ef4b;
+  border-right: 2px solid #66ef4b;
+  border-left: 2px solid #66ef4b;
   transition: 0.2s;
 }
 .footer .link .copy svg {
@@ -588,6 +586,8 @@ body {
 }
 .footer .link .site-link {
   color: #66ef4b;
+  border: 2px solid #18252b;
+  border-radius: 0 6px 6px 0;
 }
 .footer .link .site-link:active {
   color: #18252b;
