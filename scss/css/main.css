@@ -548,17 +548,17 @@ body {
   height: 100%;
   justify-content: start;
 }
-.footer .link p {
+.footer .link input {
   width: 72%;
   height: 100%;
+  color: aqua;
+  background-color: #18252b;
+  padding: 0 10px;
   margin: 0;
-  padding-left: 10px;
-  padding-top: 10px;
-  margin-right: 5%;
-  overflow: auto;
+  border: none;
 }
-.footer .link p::-webkit-scrollbar {
-  display: none;
+.footer .link input:focus {
+  outline: none;
 }
 .footer .link .copy,
 .footer .link .site-link {
