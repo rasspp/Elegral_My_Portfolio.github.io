@@ -25,13 +25,12 @@
 
    /* ? !== <==>Navbar<==> !== */
    .navigation {
-      width: 400px;
-      height: 70px;
-      background: $secondColor;
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter();
+
+      width: 400px;
+      height: 60px;
+      background: $secondColor;
       border-radius: 10px;
    }
 
@@ -42,28 +41,29 @@
 
    .navigation ul li {
       position: relative;
+
       list-style: none;
       width: 70px;
-      height: 70px;
-      z-index: 1;
+      height: 60px;
+      z-index: 2;
    }
 
    .navigation ul li a {
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter();
       flex-direction: column;
+
       width: 100%;
       text-align: center;
-      font-weight: 500;
+      // font-weight: 500;
       color: #00092c;
    }
 
    .navigation ul li a .icon {
       position: relative;
       display: block;
-      line-height: 75px;
+
+      line-height: 65px;
       font-size: 1.5em;
       text-align: center;
       transition: 0.5s;
@@ -72,15 +72,17 @@
 
    .navigation ul li.active a .icon {
       transform: translateY(-32px);
+      color: $primaryColor;
    }
 
    .navigation ul li a .text {
       position: absolute;
       color: $primaryColor;
       font-weight: 400;
-      font-size: 00.75em;
+      font-size: 0.75em;
       letter-spacing: 0.05em;
       transition: 0.5s;
+      padding: 2px 7px;
       opacity: 0;
       transform: translateY(20px);
    }
@@ -90,43 +92,47 @@
       transform: translateY(10px);
    }
 
-   .navigation ul li.active .nav-icon {
-      color: $secondColor;
-   }
+   // .navigation ul li.active .nav-icon {
+   //    color: $secondColor;
+   // }
 
    .indicator {
       position: absolute;
-      top: -50%;
+      top: -35%;
       width: 70px;
       height: 70px;
-      background: #00092c;
+      background-color: $secondColor;
       border-radius: 50%;
-      border: 6px solid $primaryColor;
+      // border: 6px solid $primaryColor;
       transition: 0.5s;
+      z-index: 1;
    }
 
    .indicator::before {
       content: "";
       position: absolute;
-      top: 50%;
-      left: -22px;
-      width: 20px;
-      height: 20px;
+      top: 5px;
+      left: -28px;
+      width: 30px;
+      height: 30px;
       background: transparent;
-      border-top-right-radius: 20px;
-      box-shadow: 1px -10px 0 0 $primaryColor;
+      border-radius: 50%;
+      box-shadow: 15px 18px #fff;
+      // border-top-right-radius: 20px;
+      // box-shadow: 1px -10px 0 0 $primaryColor;
    }
 
    .indicator::after {
       content: "";
       position: absolute;
-      top: 50%;
-      right: -22px;
+      top: 5px;
+      right: -28px;
       width: 20px;
       height: 20px;
       background: transparent;
-      border-top-left-radius: 20px;
-      box-shadow: -1px -10px 0 0 $primaryColor;
+      box-shadow: -15px 18px #fff;
+      // border-top-left-radius: 20px;
+      // box-shadow: -1px -10px 0 0 $primaryColor;
    }
 
    .navigation ul li:nth-child(1).active ~ .indicator {
