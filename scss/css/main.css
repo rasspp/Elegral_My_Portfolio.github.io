@@ -84,9 +84,8 @@ body {
   max-width: 380px;
   max-height: 10px;
   padding-bottom: 10px;
-  background-color: red;
   border-radius: 5px 5px 0 0;
-  border: 5px solid red;
+  border: 5px solid transparent;
 }
 .navbar .navigation {
   position: relative;
@@ -126,14 +125,15 @@ body {
 .navbar .navigation ul li a .icon {
   position: relative;
   display: block;
-  line-height: 65px;
-  font-size: 1.5em;
+  line-height: 50px;
+  font-size: 1.3em;
   text-align: center;
   transition: 0.5s;
   color: #18252b;
 }
 .navbar .navigation ul li.active a .icon {
-  transform: translateY(-25px);
+  transform: translateY(-23px);
+  width: 40px;
   color: #18252b;
 }
 .navbar .navigation ul li a .text {
@@ -142,18 +142,21 @@ body {
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
-  transition: 0.5s;
   padding: 2px 7px;
   opacity: 0;
-  transform: translateY(20px);
+  transition: letter-spacing 0.3s;
+  transition: 0.5s;
+  transform: translateY(100px);
 }
 .navbar .navigation ul li.active a .text {
   opacity: 1;
-  transform: translateY(10px);
+  font-weight: bold;
+  font-size: 0.9em;
+  transform: translateY(0px);
 }
 .navbar .indicator {
   position: absolute;
-  top: -35%;
+  top: -55%;
   width: 70px;
   height: 70px;
   background-color: #66ef4b;
@@ -164,7 +167,7 @@ body {
 .navbar .indicator::before {
   content: "";
   position: absolute;
-  top: -2px;
+  top: 2px;
   left: -24px;
   width: 30px;
   height: 30px;
@@ -175,7 +178,7 @@ body {
 .navbar .indicator::after {
   content: "";
   position: absolute;
-  top: -2px;
+  top: 2px;
   right: -24px;
   width: 30px;
   height: 30px;
@@ -184,19 +187,19 @@ body {
   box-shadow: -15px 18px #66ef4b;
 }
 .navbar .navigation ul li:nth-child(1).active ~ .indicator {
-  transform: translateX(-7px);
+  transform: translateX(-1.5px);
 }
 .navbar .navigation ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(50px);
+  transform: translateX(65.5px);
 }
 .navbar .navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(125px);
+  transform: translateX(132.5px);
 }
 .navbar .navigation ul li:nth-child(4).active ~ .indicator {
-  transform: translateX(200px);
+  transform: translateX(200.6px);
 }
 .navbar .navigation ul li:nth-child(5).active ~ .indicator {
-  transform: translateX(250px);
+  transform: translateX(269.5px);
 }
 
 /* ? !== <==>Home / Jumbotron<==> !== */
