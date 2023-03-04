@@ -8,6 +8,7 @@ body {
    font-family: sans-serif;
    background-color: $primaryColor;
    scroll-behavior: auto !important;
+   overflow-y: hidden;
 }
 
 /* * ===Class Universal=== * */
