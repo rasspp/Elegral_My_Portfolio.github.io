@@ -2,9 +2,17 @@
 
 /* ? !== <==>Contact<==> !== */
 .contact {
+   @include flexCenter();
+   flex-direction: column;
+
+   width: auto;
    min-height: 100vh;
    max-height: 100vh;
-   overflow: hidden;
+   overflow: scroll;
+
+   // &::-webkit-scrollbar {
+   //    display: none;
+   // }
 
    .container {
       max-width: 700px;
@@ -40,7 +48,7 @@
       > textarea {
          width: 90%;
          height: 35px;
-         color: $secondColor;
+         color: $textColor;
          font-size: 14px;
          letter-spacing: 1px;
          background-color: $primaryColor;
@@ -78,5 +86,14 @@
          margin: auto;
          border: 2px solid $secondColor;
       }
+   }
+
+   .side {
+      min-height: 1000px;
+   }
+
+   .side:nth-child(2) {
+      min-height: 1000px;
+      background-color: red;
    }
 }
