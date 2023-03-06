@@ -3,21 +3,40 @@
 /* ? !== <==>Contact<==> !== */
 .contact {
    @include flexCenter();
-   flex-direction: column;
+   // flex-direction: column;
 
-   width: auto;
+   width: 100%;
    min-height: 100vh;
    max-height: 100vh;
-   overflow: scroll;
 
-   // &::-webkit-scrollbar {
-   //    display: none;
-   // }
+   .side {
+      max-width: 40%;
+      height: 100%;
+      background: blue;
+      overflow: scroll;
 
-   .container {
-      max-width: 700px;
-      min-height: 300px;
+      // &::-webkit-scrollbar {
+      //    display: none;
+      // }
+   }
+
+   .containe {
+      // max-width: 700px;
+      // min-height: 300px;
       padding: 20px 10px;
+
+      &:nth-child(1) {
+         // min-width: 100%;
+         // max-width: 100%;
+         // min-height: 1000px;
+      }
+
+      &:nth-child(2) {
+         // min-width: 100%;
+         // max-width: 100%;
+         height: 100px;
+         background-color: red;
+      }
    }
 
    .form {
@@ -86,14 +105,5 @@
          margin: auto;
          border: 2px solid $secondColor;
       }
-   }
-
-   .side {
-      min-height: 1000px;
-   }
-
-   .side:nth-child(2) {
-      min-height: 1000px;
-      background-color: red;
    }
 }
