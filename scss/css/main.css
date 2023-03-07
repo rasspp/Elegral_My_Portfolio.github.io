@@ -379,23 +379,23 @@ body {
   width: 100%;
   min-height: 100vh;
   max-height: 100vh;
+  overflow: auto;
 }
-.contact .side {
-  max-width: 40%;
-  height: 100%;
-  background: blue;
-  overflow: scroll;
-}
-.contact .containe {
-  padding: 20px 10px;
-}
-.contact .containe:nth-child(2) {
-  height: 100px;
-  background-color: red;
+.contact .container {
+  max-width: 700px;
+  padding: 100px 0 100px 0;
+  border: 2px solid red;
 }
 .contact .form {
   display: flex;
   flex-wrap: wrap;
+  min-height: 350px;
+}
+.contact .sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 .contact .box {
   display: flex;
