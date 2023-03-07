@@ -3,37 +3,51 @@
 /* ? !== <==>Contact<==> !== */
 .contact {
    @include flexCenter();
-   // flex-direction: column;
 
-   width: 100%;
+   min-width: 95vw;
    min-height: 100vh;
    max-height: 100vh;
    overflow: auto;
 
-   .side {
-      // &::-webkit-scrollbar {
-      //    display: none;
-      // }
+   &::-webkit-scrollbar {
+      display: none;
    }
 
    .container {
       max-width: 700px;
-      padding: 100px 0 100px 0;
-      border: 2px solid red;
+      padding: 100px 0 200px 0;
+   }
+
+   .neurlight {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   h2 {
+      width: max-content;
+      text-align: center;
+      font-size: 28px;
+      margin: 30px 0 20px;
+      border-bottom: 2px solid $secondColor;
    }
 
    .form {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 20px;
 
-      min-height: 350px;
+      min-height: max-content;
+      margin-bottom: 40px;
    }
 
    .box {
       @include flexCenter();
       flex-direction: column;
 
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
 
       > label {
          width: 90%;
@@ -92,16 +106,29 @@
       }
    }
 
-   // * =>> Soosmed <<=
+   // * ==================>> Soosmed <<===================
    .sosmed {
       @include flexCenter();
 
       margin-top: 100px;
+      padding-top: 0;
+
       .container {
          @include flexCenter();
+         justify-content: space-around;
+         flex-direction: column;
 
-         height: 200px;
-         padding: 20px;
+         width: 100%;
+         height: max-content;
+         padding: 0 30px 20px;
+         border: 2px solid $secondColor;
+
+         h2 {
+            color: $textColor;
+            font-size: 28px;
+            margin: 30px 0 25px;
+            border-bottom: 2px solid $secondColor;
+         }
       }
 
       .second-container {
@@ -113,7 +140,7 @@
          border: 2px solid $secondColor;
       }
 
-      // * Button Dropup
+      // * ==>> Button Dropup <===
       .dropup {
          width: 15%;
          height: 100%;
@@ -128,7 +155,6 @@
          font-size: 16px;
          font-weight: bold;
          background-color: $secondColor;
-         // padding: 16px;
          border: none;
          border-radius: 5px 0 0 5px;
 
@@ -224,10 +250,6 @@
                outline: none;
             }
          }
-
-         // p::-webkit-scrollbar {
-         //    display: none;
-         // }
 
          .copy,
          .site-link {
