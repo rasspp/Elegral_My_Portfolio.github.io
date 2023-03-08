@@ -410,6 +410,7 @@ body {
   gap: 20px;
   min-height: -moz-max-content;
   min-height: max-content;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 .contact .box {
@@ -503,6 +504,7 @@ body {
   width: 95%;
   height: 50px;
   border-radius: 8px;
+  margin-top: 15px;
   border: 2px solid #66ef4b;
 }
 .contact .sosmed .dropup {
