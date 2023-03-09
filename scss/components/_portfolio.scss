@@ -8,8 +8,13 @@
 
    .container {
       @include flexCenter();
+      flex-direction: column;
+   }
 
-      height: 200px;
-      padding: 20px;
+   nav {
+   }
+
+   .tab-content {
+      min-width: 750px;
    }
 }
