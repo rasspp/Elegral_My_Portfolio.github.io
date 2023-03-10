@@ -647,12 +647,15 @@ body {
 }
 .portfolio .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   flex-direction: column;
   max-width: -moz-max-content;
   max-width: max-content;
+  height: 100%;
+}
+.portfolio nav {
+  margin-top: 20vh;
 }
 .portfolio nav .nav-link {
   color: aqua;
