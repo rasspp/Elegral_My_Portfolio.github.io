@@ -649,8 +649,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: start;
   flex-direction: column;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.portfolio nav .nav-link {
+  color: aqua;
+  font-weight: bold;
+  z-index: 10;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in;
+}
+.portfolio nav .nav-link:hover {
+  color: #66ef4b;
+  border: 2px solid #66ef4b;
+}
+.portfolio nav .nav-link.active {
+  color: #18252b;
+  background-color: #66ef4b;
+  border: 2px solid transparent;
 }
 .portfolio .tab-content {
   min-width: 750px;
+  margin-top: -2px;
+  padding: 10px;
+  border-radius: 0 8px 8px 8px;
 }/*# sourceMappingURL=main.css.map */
