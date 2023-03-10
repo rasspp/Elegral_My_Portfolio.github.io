@@ -675,4 +675,9 @@ body {
   margin-top: -2px;
   padding: 10px;
   border-radius: 0 8px 8px 8px;
+}
+.portfolio .tab-content .card {
+  color: #18252b;
+  background-color: #66ef4b;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
