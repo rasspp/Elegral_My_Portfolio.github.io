@@ -11,14 +11,21 @@
       display: none;
    }
 
+   .side {
+      @include flexCenter();
+
+      width: 100%;
+   }
+
    .container {
       display: flex;
       justify-content: start;
-      align-items: center;
+      align-items: start;
       flex-direction: column;
 
-      width: 100%;
+      width: max-content;
       height: 100%;
+      margin: auto;
       margin-bottom: 20%;
    }
 
@@ -101,16 +108,20 @@
          .text-hover {
             bottom: 0;
             @include flexCenter();
+            justify-content: space-between;
 
             width: 100%;
             height: 20%;
-            div {
+
+            div:nth-child(1) p,
+            div:nth-child(2) {
                @include flexCenter();
 
                font-size: 16px;
                padding: 5px 13px;
                margin-right: 5px;
                border-radius: 5px;
+               border: 2px solid $primaryColor;
                transition: 0.3s ease-out;
 
                // &:nth-child(2) {
@@ -119,7 +130,7 @@
             }
          }
 
-         &:hover .text-hover div,
+         &:hover .text-hover,
          &:hover .title-project {
             color: $primaryColor;
             background-color: $secondColor;

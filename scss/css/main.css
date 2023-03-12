@@ -649,13 +649,21 @@ body {
 .portfolio::-webkit-scrollbar {
   display: none;
 }
+.portfolio .side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .portfolio .container {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
-  width: 100%;
+  width: -moz-max-content;
+  width: max-content;
   height: 100%;
+  margin: auto;
   margin-bottom: 20%;
 }
 .portfolio nav {
@@ -732,10 +740,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 20%;
 }
-.portfolio .tab-content .card .text-hover div {
+.portfolio .tab-content .card .text-hover div:nth-child(1) p,
+.portfolio .tab-content .card .text-hover div:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -743,9 +753,10 @@ body {
   padding: 5px 13px;
   margin-right: 5px;
   border-radius: 5px;
+  border: 2px solid #18252b;
   transition: 0.3s ease-out;
 }
-.portfolio .tab-content .card:hover .text-hover div, .portfolio .tab-content .card:hover .title-project {
+.portfolio .tab-content .card:hover .text-hover, .portfolio .tab-content .card:hover .title-project {
   color: #18252b;
   background-color: #66ef4b;
 }/*# sourceMappingURL=main.css.map */
