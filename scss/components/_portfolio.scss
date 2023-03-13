@@ -131,6 +131,16 @@
                margin-right: 5px;
                border-radius: 5px;
             }
+
+            span {
+               position: absolute;
+               bottom: 0;
+
+               width: 80%;
+               height: 20px;
+               background-color: $primaryColor;
+               border-top: 2px solid $secondColor;
+            }
          }
 
          &:hover .text-hover,
