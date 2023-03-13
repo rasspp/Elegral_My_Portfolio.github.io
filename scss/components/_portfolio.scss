@@ -93,26 +93,27 @@
             text-align: center;
             font-weight: bold;
             padding-top: 5px;
-            transition: background-color 0.3s ease-out;
          }
 
          .title-project {
-            left: 0;
-            top: 0;
+            left: 5px;
+            top: 5px;
 
             width: max-content;
             height: 15%;
             padding: 4px 10px 0;
-            border-radius: 5px;
+            border-radius: 5px 0 5px 0;
          }
 
          .text-hover {
-            bottom: -2px;
+            left: 5px;
+            bottom: 0px;
             @include flexCenter();
             justify-content: space-between;
 
-            width: 100%;
-            height: 20%;
+            width: 96.8%;
+            height: 25%;
+            border-radius: 0 0 5px 5px;
 
             div {
                @include flexCenter();
@@ -122,10 +123,11 @@
             p {
                @include flexCenter();
 
-               width: 30px;
-               height: 30px;
+               width: 32px;
+               height: 32px;
+
+               font-size: 14px;
                margin: 0;
-               font-size: 16 px;
                margin-right: 5px;
                border-radius: 5px;
             }
@@ -133,14 +135,30 @@
 
          &:hover .text-hover,
          &:hover .title-project {
-            color: $primaryColor;
-            background-color: $secondColor;
+            color: $secondColor;
+            background-color: $primaryColor;
+         }
+
+         &:hover .text-hover {
+            border-top: 2px solid $secondColor;
+         }
+
+         &:hover .title-project {
+            border-right: 2px solid $secondColor;
+            border-bottom: 2px solid $secondColor;
          }
 
          &:hover .text-hover p {
-            border: 2px solid $primaryColor;
+            color: $secondColor;
+            background-color: $primaryColor;
+            border: 2px solid $secondColor;
             border-radius: 50%;
          }
+
+         // &:hover .title-project p {
+         //    color: $secondColor;
+         //    background-color: $primaryColor;
+         // }
       }
    }
 }
