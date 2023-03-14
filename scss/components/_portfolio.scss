@@ -77,12 +77,21 @@
       .card {
          position: relative;
 
+         min-width: 330px !important;
+         max-width: 330px !important;
+         min-height: 200px;
          color: $primaryColor;
          background-color: $secondColor;
-         padding: 10px;
+         padding: 3px !important;
+         // overflow: auto;
 
          img {
+            position: absolute;
+
+            min-width: 100%;
+            min-height: 100px;
             border-radius: 5px;
+            padding: 2px;
          }
 
          .text-hover,
@@ -106,12 +115,14 @@
          }
 
          .text-hover {
-            left: 5px;
-            bottom: 0px;
+            position: relative !important;
+            left: 3.5px;
+            bottom: -67px;
+            // bottom: -2px;
             @include flexCenter();
             justify-content: space-between;
 
-            width: 96.8%;
+            width: 98%;
             height: 25%;
             border-radius: 0 0 5px 5px;
 
@@ -131,34 +142,55 @@
                margin-right: 5px;
                border-radius: 5px;
             }
+         }
+
+         /* &:hover */
+         span {
+            width: 79%;
+            height: 16px;
+            background-color: $primaryColor;
+            border-top: 2px solid $secondColor;
+            // border-radius: 0 5px 0 0;
+         }
+
+         .span-skyline {
+            position: relative;
+            bottom: 45px;
+            left: 0;
+            z-index: 10;
 
             span {
                position: absolute;
-               bottom: 0;
+               left: auto;
+               right: -6.5%;
+               bottom: -93.1%;
 
-               width: 80%;
-               height: 20px;
-               background-color: $primaryColor;
-               border-top: 2px solid $secondColor;
+               width: 24.8px;
+               height: 25px;
+               transform: rotate(25deg);
             }
          }
 
-         &:hover .text-hover,
-         &:hover .title-project {
+         /* &:hover */
+         .text-hover,
+         /* &:hover */ .title-project {
             color: $secondColor;
             background-color: $primaryColor;
          }
 
-         &:hover .text-hover {
+         /* &:hover */
+         .text-hover {
             border-top: 2px solid $secondColor;
          }
 
-         &:hover .title-project {
+         /* &:hover */
+         .title-project {
             border-right: 2px solid $secondColor;
             border-bottom: 2px solid $secondColor;
          }
 
-         &:hover .text-hover p {
+         /* &:hover */
+         .text-hover p {
             color: $secondColor;
             background-color: $primaryColor;
             border: 2px solid $secondColor;

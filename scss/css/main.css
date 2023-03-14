@@ -711,12 +711,24 @@ body {
 }
 .portfolio .tab-content .card {
   position: relative;
+  min-width: 330px !important;
+  max-width: 330px !important;
+  min-height: 200px;
   color: #18252b;
   background-color: #66ef4b;
-  padding: 10px;
+  padding: 3px !important;
+  /* &:hover */
+  /* &:hover */
+  /* &:hover */
+  /* &:hover */
+  /* &:hover */
 }
 .portfolio .tab-content .card img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100px;
   border-radius: 5px;
+  padding: 2px;
 }
 .portfolio .tab-content .card .text-hover,
 .portfolio .tab-content .card .title-project {
@@ -736,13 +748,14 @@ body {
   border-radius: 5px 0 5px 0;
 }
 .portfolio .tab-content .card .text-hover {
-  left: 5px;
-  bottom: 0px;
+  position: relative !important;
+  left: 3.5px;
+  bottom: -67px;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  width: 96.8%;
+  width: 98%;
   height: 25%;
   border-radius: 0 0 5px 5px;
 }
@@ -763,26 +776,40 @@ body {
   margin-right: 5px;
   border-radius: 5px;
 }
-.portfolio .tab-content .card .text-hover span {
-  position: absolute;
-  bottom: 0;
-  width: 80%;
-  height: 20px;
+.portfolio .tab-content .card span {
+  width: 79%;
+  height: 16px;
   background-color: #18252b;
   border-top: 2px solid #66ef4b;
 }
-.portfolio .tab-content .card:hover .text-hover, .portfolio .tab-content .card:hover .title-project {
+.portfolio .tab-content .card .span-skyline {
+  position: relative;
+  bottom: 45px;
+  left: 0;
+  z-index: 10;
+}
+.portfolio .tab-content .card .span-skyline span {
+  position: absolute;
+  left: auto;
+  right: -6.5%;
+  bottom: -93.1%;
+  width: 24.8px;
+  height: 25px;
+  transform: rotate(25deg);
+}
+.portfolio .tab-content .card .text-hover,
+.portfolio .tab-content .card .title-project {
   color: #66ef4b;
   background-color: #18252b;
 }
-.portfolio .tab-content .card:hover .text-hover {
+.portfolio .tab-content .card .text-hover {
   border-top: 2px solid #66ef4b;
 }
-.portfolio .tab-content .card:hover .title-project {
+.portfolio .tab-content .card .title-project {
   border-right: 2px solid #66ef4b;
   border-bottom: 2px solid #66ef4b;
 }
-.portfolio .tab-content .card:hover .text-hover p {
+.portfolio .tab-content .card .text-hover p {
   color: #66ef4b;
   background-color: #18252b;
   border: 2px solid #66ef4b;
