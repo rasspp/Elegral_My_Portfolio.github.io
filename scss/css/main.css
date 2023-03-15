@@ -717,11 +717,6 @@ body {
   color: #18252b;
   background-color: #66ef4b;
   padding: 3px !important;
-  /* &:hover */
-  /* &:hover */
-  /* &:hover */
-  /* &:hover */
-  /* &:hover */
 }
 .portfolio .tab-content .card img {
   position: absolute;
@@ -776,7 +771,7 @@ body {
   margin-right: 5px;
   border-radius: 5px;
 }
-.portfolio .tab-content .card span {
+.portfolio .tab-content .card:hover span {
   width: 79%;
   height: 16px;
   background-color: #18252b;
@@ -797,19 +792,18 @@ body {
   height: 25px;
   transform: rotate(32deg);
 }
-.portfolio .tab-content .card .text-hover,
-.portfolio .tab-content .card .title-project {
+.portfolio .tab-content .card:hover .text-hover, .portfolio .tab-content .card:hover .title-project {
   color: #66ef4b;
   background-color: #18252b;
 }
-.portfolio .tab-content .card .text-hover {
+.portfolio .tab-content .card:hover .text-hover {
   border-top: 2px solid #66ef4b;
 }
-.portfolio .tab-content .card .title-project {
+.portfolio .tab-content .card:hover .title-project {
   border-right: 2px solid #66ef4b;
   border-bottom: 2px solid #66ef4b;
 }
-.portfolio .tab-content .card .text-hover p {
+.portfolio .tab-content .card:hover .text-hover p {
   color: #66ef4b;
   background-color: #18252b;
   border: 2px solid #66ef4b;

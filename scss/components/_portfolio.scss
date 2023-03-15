@@ -144,8 +144,7 @@
             }
          }
 
-         /* &:hover */
-         span {
+         &:hover span {
             width: 79%;
             height: 16px;
             background-color: $primaryColor;
@@ -171,26 +170,22 @@
             }
          }
 
-         /* &:hover */
-         .text-hover,
-         /* &:hover */ .title-project {
+         &:hover .text-hover,
+         &:hover .title-project {
             color: $secondColor;
             background-color: $primaryColor;
          }
 
-         /* &:hover */
-         .text-hover {
+         &:hover .text-hover {
             border-top: 2px solid $secondColor;
          }
 
-         /* &:hover */
-         .title-project {
+         &:hover .title-project {
             border-right: 2px solid $secondColor;
             border-bottom: 2px solid $secondColor;
          }
 
-         /* &:hover */
-         .text-hover p {
+         &:hover .text-hover p {
             color: $secondColor;
             background-color: $primaryColor;
             border: 2px solid $secondColor;
