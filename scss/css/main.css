@@ -755,10 +755,12 @@ body {
   border-radius: 0 0 5px 5px;
 }
 .portfolio .tab-content .card .text-hover div {
+  z-index: 12;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 10px;
+  margin-top: -26px;
 }
 .portfolio .tab-content .card .text-hover p {
   display: flex;
