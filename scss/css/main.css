@@ -745,7 +745,7 @@ body {
 .portfolio .tab-content .card .text-hover {
   position: relative !important;
   left: 0.5px;
-  bottom: -76px;
+  bottom: -75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -764,7 +764,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
+  min-width: 32px;
   height: 32px;
   font-size: 14px;
   margin: 0;
@@ -778,16 +778,16 @@ body {
   border-top: 2px solid #66ef4b;
 }
 .portfolio .tab-content .card .span-skyline {
-  position: relative;
-  bottom: 31px;
-  left: -121px;
+  position: absolute;
+  bottom: 47px;
+  left: 0px;
   z-index: 10;
 }
 .portfolio .tab-content .card .span-skyline span {
   position: absolute;
   left: auto;
-  right: -8%;
-  bottom: -99%;
+  right: -6%;
+  bottom: -100%;
   width: 24.8px;
   height: 25px;
   transform: rotate(32deg);
