@@ -739,8 +739,8 @@ body {
   padding-top: 5px;
 }
 .portfolio .tab-content .card .title-project {
-  left: 5px;
-  top: 5px;
+  left: 2.8px;
+  top: 2.5px;
   width: -moz-max-content;
   width: max-content;
   height: 15%;
@@ -749,14 +749,14 @@ body {
 }
 .portfolio .tab-content .card .text-hover {
   position: relative !important;
-  left: 3.5px;
-  bottom: -67px;
+  left: 0.5px;
+  bottom: -76px;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  width: 98%;
-  height: 25%;
+  width: 100.5%;
+  height: 50px;
   border-radius: 0 0 5px 5px;
 }
 .portfolio .tab-content .card .text-hover div {
@@ -784,18 +784,18 @@ body {
 }
 .portfolio .tab-content .card .span-skyline {
   position: relative;
-  bottom: 45px;
-  left: 0;
+  bottom: 31px;
+  left: -121px;
   z-index: 10;
 }
 .portfolio .tab-content .card .span-skyline span {
   position: absolute;
   left: auto;
-  right: -6.5%;
-  bottom: -93.1%;
+  right: -8%;
+  bottom: -99%;
   width: 24.8px;
   height: 25px;
-  transform: rotate(25deg);
+  transform: rotate(32deg);
 }
 .portfolio .tab-content .card .text-hover,
 .portfolio .tab-content .card .title-project {
