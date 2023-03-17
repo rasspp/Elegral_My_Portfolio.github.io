@@ -23,7 +23,8 @@
       align-items: start;
       flex-direction: column;
 
-      width: max-content;
+      min-width: max-content;
+      max-width: 700px;
       height: 100%;
       margin: auto;
       margin-bottom: 20%;
