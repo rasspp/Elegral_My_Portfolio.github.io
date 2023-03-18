@@ -347,17 +347,29 @@ body {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  border-left: 2px solid #66ef4b;
+  border-left: 4px solid #66ef4b;
+  border-radius: 20px 0 0 0px;
+}
+.skills .box div:nth-child(2) {
+  border-radius: 0 0 0 20px;
 }
 .skills .box img {
   width: 40%;
+  margin: 15px;
 }
 .skills .box p {
-  padding: 7px 2px 0px 10px;
+  color: #66ef4b;
+  font-weight: bold;
+  padding: 4px 20px 4px 20px;
   margin: 0;
-  margin-left: -2px;
-  border-bottom: 2px solid #66ef4b;
-  border-radius: 0 0 0 5px;
+  text-shadow: 0.5px 0.5px #66ef4b;
+  border-bottom: 3px solid #66ef4b;
+  border-top: 3px solid #66ef4b;
+  border-radius: 0 25px 25px 0px;
+}
+.skills .box p:nth-child(2) {
+  margin-top: -3px;
+  border-radius: 0 25px 25px 35px;
 }
 
 /* ? !== <==>Contact<==> !== */
