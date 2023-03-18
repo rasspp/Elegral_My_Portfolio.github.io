@@ -323,6 +323,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   border: 2px solid aqua;
   width: -moz-max-content;
   width: max-content;
@@ -341,15 +342,22 @@ body {
   min-height: max-content;
 }
 .skills .box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
   border-left: 2px solid #66ef4b;
 }
 .skills .box img {
   width: 40%;
 }
 .skills .box p {
+  padding: 7px 2px 0px 10px;
   margin: 0;
-  padding: 7px 15px;
+  margin-left: -2px;
   border-bottom: 2px solid #66ef4b;
+  border-radius: 0 0 0 5px;
 }
 
 /* ? !== <==>Contact<==> !== */
