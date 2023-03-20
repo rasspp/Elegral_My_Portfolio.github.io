@@ -10,11 +10,14 @@
    .container {
       @include flexCenter();
       flex-wrap: wrap;
+      gap: 30px 100px;
       border: 2px solid aqua;
 
       width: max-content;
       max-width: 700px;
       height: 100%;
+      padding-top: 120px;
+      padding-bottom: 230px;
    }
 
    .box {
@@ -25,7 +28,6 @@
       min-width: 120px;
       max-width: 130px;
       min-height: 200px;
-      margin-right: 40px;
 
       div {
          @include flexCenter();
