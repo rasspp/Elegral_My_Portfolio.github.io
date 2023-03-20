@@ -334,12 +334,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
-  min-width: 200px;
-  max-width: 200px;
-  min-height: -moz-max-content;
-  min-height: max-content;
+  min-width: 120px;
+  max-width: 130px;
+  min-height: 200px;
+  margin-right: 40px;
 }
 .skills .box div {
   display: flex;
@@ -347,25 +347,31 @@ body {
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  width: 100%;
   border-left: 4px solid #66ef4b;
-  border-radius: 20px 0 0 0px;
+  border-radius: 10px 0 10px 0px;
+  border-bottom: 3px solid #66ef4b;
 }
 .skills .box div:nth-child(2) {
+  border-bottom: none;
   border-radius: 0 0 0 20px;
 }
 .skills .box img {
-  width: 40%;
+  width: 100px;
   margin: 15px;
 }
 .skills .box p {
-  color: #66ef4b;
-  font-weight: bold;
-  padding: 4px 20px 4px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  min-height: 40px;
+  color: aqua;
+  text-align: center;
   margin: 0;
   text-shadow: 0.5px 0.5px #66ef4b;
   border-bottom: 3px solid #66ef4b;
-  border-top: 3px solid #66ef4b;
-  border-radius: 0 25px 25px 0px;
+  border-radius: 0 5px 10px 25px;
 }
 .skills .box p:nth-child(2) {
   margin-top: -3px;
