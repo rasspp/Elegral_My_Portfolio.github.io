@@ -36,6 +36,8 @@
 
          background-color: transparent;
          padding: 5px;
+         border: 2px solid $secondColor;
+         border-radius: 8px;
          box-shadow: none;
          box-sizing: border-box;
 
@@ -52,7 +54,7 @@
       }
    }
 
-   .content {
+   .content-selected {
       min-height: 150px;
       padding: 10px 15px;
       color: $textColor;

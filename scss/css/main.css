@@ -294,6 +294,8 @@ body {
   z-index: 1000;
   background-color: transparent;
   padding: 5px;
+  border: 2px solid #66ef4b;
+  border-radius: 8px;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -306,7 +308,7 @@ body {
   color: #18252b;
   background-color: #66ef4b;
 }
-.about-me .content {
+.about-me .content-selected {
   min-height: 150px;
   padding: 10px 15px;
   color: aqua;
