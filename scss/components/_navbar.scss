@@ -151,4 +151,15 @@
    .navigation ul li:nth-child(5).active ~ .indicator {
       transform: translateX(269.5px);
    }
+
+   .power {
+      width: 100px;
+      height: 50px;
+      background-color: $primaryColor;
+      border: 2px solid $secondColor;
+
+      &:active {
+         background-color: blue;
+      }
+   }
 }

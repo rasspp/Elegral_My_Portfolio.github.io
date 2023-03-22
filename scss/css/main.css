@@ -203,6 +203,15 @@ body {
 .navbar .navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(269.5px);
 }
+.navbar .power {
+  width: 100px;
+  height: 50px;
+  background-color: #18252b;
+  border: 2px solid #66ef4b;
+}
+.navbar .power:active {
+  background-color: blue;
+}
 
 /* ? !== <==>Home / Jumbotron<==> !== */
 .home {
