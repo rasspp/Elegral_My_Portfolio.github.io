@@ -877,11 +877,12 @@ body {
 }
 .portfolio .tab-content .card:hover .text-hover {
   border-top: 2px solid #66ef4b;
+  animation: toTop 0.7s;
 }
 .portfolio .tab-content .card:hover .title-project {
   border-right: 2px solid #66ef4b;
   border-bottom: 2px solid #66ef4b;
-  animation: toBottom 0.7s;
+  animation: toBottom 0.85s;
 }
 .portfolio .tab-content .card:hover .text-hover p {
   color: #66ef4b;
@@ -902,6 +903,9 @@ body {
   0% {
     top: -50px;
   }
+  50% {
+    top: -50px;
+  }
   100% {
     top: 2px;
   }
@@ -912,5 +916,13 @@ body {
   }
   100% {
     top: 2px;
+  }
+}
+@keyframes toTop {
+  0% {
+    bottom: -150px;
+  }
+  100% {
+    bottom: -75px;
   }
 }/*# sourceMappingURL=main.css.map */
