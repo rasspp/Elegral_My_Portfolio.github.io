@@ -793,6 +793,7 @@ body {
   color: #18252b;
   background-color: #66ef4b;
   padding: 3px !important;
+  overflow: hidden;
 }
 .portfolio .tab-content .card img {
   position: absolute;
@@ -880,6 +881,7 @@ body {
 .portfolio .tab-content .card:hover .title-project {
   border-right: 2px solid #66ef4b;
   border-bottom: 2px solid #66ef4b;
+  animation: toBottom 0.7s;
 }
 .portfolio .tab-content .card:hover .text-hover p {
   color: #66ef4b;
@@ -894,5 +896,21 @@ body {
   }
   100% {
     height: 100%;
+  }
+}
+@keyframes toBottom {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 2px;
+  }
+}
+@keyframes toRight {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 2px;
   }
 }/*# sourceMappingURL=main.css.map */

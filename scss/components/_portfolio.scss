@@ -116,7 +116,7 @@
          color: $primaryColor;
          background-color: $secondColor;
          padding: 3px !important;
-         // overflow: auto;
+         overflow: hidden;
 
          img {
             position: absolute;
@@ -219,6 +219,7 @@
          &:hover .title-project {
             border-right: 2px solid $secondColor;
             border-bottom: 2px solid $secondColor;
+            animation: toBottom 0.7s;
          }
 
          &:hover .text-hover p {
@@ -242,5 +243,23 @@
    }
    100% {
       height: 100%;
+   }
+}
+
+@keyframes toBottom {
+   0% {
+      top: -50px;
+   }
+   100% {
+      top: 2px;
+   }
+}
+
+@keyframes toRight {
+   0% {
+      top: -50px;
+   }
+   100% {
+      top: 2px;
    }
 }
