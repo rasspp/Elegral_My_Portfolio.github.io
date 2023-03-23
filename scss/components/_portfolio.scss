@@ -30,14 +30,37 @@
       margin-bottom: 20%;
    }
 
+   // * ====>> Tabs Nav <<====
    nav {
       margin-top: 15vh;
       .nav-link {
+         @include flexCenter();
+         justify-content: end;
+         gap: 10px;
+
          color: $textColor;
          font-weight: bold;
          z-index: 10;
          border: 2px solid transparent;
+         overflow: hidden;
          transition: 0.3s ease-in;
+
+         p {
+            display: none;
+            margin: 0;
+            animation: moveUp 1s;
+            white-space: nowrap;
+            overflow: hidden;
+         }
+
+         ion-icon {
+            width: 30px;
+            color: $secondColor;
+            font-weight: bold;
+            --ionicon-stroke-width: 40px;
+            font-size: 25px;
+            // transition: 0.3s ease-in;
+         }
 
          &:nth-child(1) {
             border-radius: 0 8px 0 0;
@@ -52,9 +75,18 @@
          color: $primaryColor;
          background-color: $secondColor;
          border: 2px solid transparent;
+
+         ion-icon {
+            color: $primaryColor;
+         }
+
+         p {
+            display: block;
+         }
       }
    }
 
+   // * ====>> Content <<====
    .tab-content {
       min-width: 750px;
       max-width: 750px;
@@ -201,5 +233,14 @@
          //    background-color: $primaryColor;
          // }
       }
+   }
+}
+
+@keyframes moveUp {
+   0% {
+      height: 0;
+   }
+   100% {
+      height: 100%;
    }
 }
