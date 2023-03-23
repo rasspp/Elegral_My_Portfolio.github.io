@@ -357,13 +357,15 @@ body {
   max-height: 100vh;
   overflow: auto;
 }
+.skills::-webkit-scrollbar {
+  display: none;
+}
 .skills .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px 100px;
-  border: 2px solid aqua;
   width: -moz-max-content;
   width: max-content;
   max-width: 700px;
