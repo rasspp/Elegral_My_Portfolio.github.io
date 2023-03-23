@@ -203,14 +203,41 @@ body {
 .navbar .navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(269.5px);
 }
-.navbar .power {
-  width: 100px;
-  height: 50px;
+.navbar .power,
+.navbar .whatsapp {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+  width: 70px;
+  height: 60px;
   background-color: #18252b;
   border: 2px solid #66ef4b;
+  border-radius: 8px;
 }
-.navbar .power:active {
-  background-color: blue;
+.navbar .power svg,
+.navbar .power ion-icon,
+.navbar .whatsapp svg,
+.navbar .whatsapp ion-icon {
+  width: 40px;
+  height: 40px;
+}
+.navbar .power path,
+.navbar .power ion-icon,
+.navbar .whatsapp path,
+.navbar .whatsapp ion-icon {
+  fill: #66ef4b;
+}
+.navbar .power:active path, .navbar .power:active ion-icon,
+.navbar .whatsapp:active path,
+.navbar .whatsapp:active ion-icon {
+  fill: #18252b;
+}
+.navbar .power:active,
+.navbar .whatsapp:active {
+  background-color: #66ef4b;
+}
+.navbar .whatsapp {
+  right: 20px;
 }
 
 /* ? !== <==>Home / Jumbotron<==> !== */

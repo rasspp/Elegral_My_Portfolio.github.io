@@ -152,14 +152,40 @@
       transform: translateX(269.5px);
    }
 
-   .power {
-      width: 100px;
-      height: 50px;
+   .power,
+   .whatsapp {
+      position: absolute;
+      top: -100px;
+      right: 100px;
+
+      width: 70px;
+      height: 60px;
       background-color: $primaryColor;
       border: 2px solid $secondColor;
+      border-radius: 8px;
+
+      svg,
+      ion-icon {
+         width: 40px;
+         height: 40px;
+      }
+
+      path,
+      ion-icon {
+         fill: $secondColor;
+      }
+
+      &:active path,
+      &:active ion-icon {
+         fill: $primaryColor;
+      }
 
       &:active {
-         background-color: blue;
+         background-color: $secondColor;
       }
+   }
+
+   .whatsapp {
+      right: 20px;
    }
 }
