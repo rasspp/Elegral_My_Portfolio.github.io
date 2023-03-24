@@ -131,7 +131,6 @@
          .title-project {
             position: absolute;
 
-            color: transparent;
             text-align: center;
             font-weight: bold;
             padding-top: 5px;
@@ -139,25 +138,34 @@
 
          .title-project {
             left: 2.8px;
-            top: 2.5px;
+            top: -50px;
 
             width: max-content;
             height: 15%;
+            color: $secondColor;
+            background-color: $primaryColor;
             padding: 4px 10px 0;
+            border-right: 2px solid $secondColor;
+            border-bottom: 2px solid $secondColor;
             border-radius: 5px 0 5px 0;
+            animation: backTitleProject 0.3s;
          }
 
          .text-hover {
             position: relative !important;
             left: 0.5px;
-            bottom: -75px;
-            // bottom: -2px;
+            bottom: -150px;
+
+            border-top: 2px solid $secondColor;
             @include flexCenter();
             justify-content: space-between;
 
             width: 100.5%;
             height: 50px;
+            color: $secondColor;
+            background-color: $primaryColor;
             border-radius: 0 0 5px 5px;
+            animation: backTextHover 1s;
 
             div {
                z-index: 12;
@@ -176,11 +184,12 @@
                font-size: 14px;
                margin: 0;
                margin-right: 5px;
-               border-radius: 5px;
+               border: 2px solid $secondColor;
+               border-radius: 50%;
             }
          }
 
-         &:hover span {
+         span {
             width: 79%;
             height: 16px;
             background-color: $primaryColor;
@@ -213,27 +222,20 @@
          }
 
          &:hover .text-hover {
-            border-top: 2px solid $secondColor;
-            animation: toTop 0.7s;
+            bottom: -75px;
+
+            animation: textHover 0.7s;
          }
 
          &:hover .title-project {
-            border-right: 2px solid $secondColor;
-            border-bottom: 2px solid $secondColor;
-            animation: toBottom 0.85s;
+            left: 2.8px;
+            top: 2.5px;
+
+            animation: titleProject 0.85s;
          }
 
          &:hover .text-hover p {
-            color: $secondColor;
-            background-color: $primaryColor;
-            border: 2px solid $secondColor;
-            border-radius: 50%;
          }
-
-         // &:hover .title-project p {
-         //    color: $secondColor;
-         //    background-color: $primaryColor;
-         // }
       }
    }
 }
@@ -247,7 +249,7 @@
    }
 }
 
-@keyframes toBottom {
+@keyframes titleProject {
    0% {
       top: -50px;
    }
@@ -255,7 +257,18 @@
       top: -50px;
    }
    100% {
-      top: 2px;
+      top: 2.8px;
+   }
+}
+@keyframes backTitleProject {
+   0% {
+      top: 2.5px;
+   }
+   50% {
+      top: 2.5px;
+   }
+   100% {
+      top: -50px;
    }
 }
 
@@ -268,11 +281,22 @@
    }
 }
 
-@keyframes toTop {
+@keyframes textHover {
    0% {
       bottom: -150px;
    }
    100% {
       bottom: -75px;
+   }
+}
+@keyframes backTextHover {
+   0% {
+      bottom: -75px;
+   }
+   50% {
+      bottom: -75px;
+   }
+   100% {
+      bottom: -150px;
    }
 }
