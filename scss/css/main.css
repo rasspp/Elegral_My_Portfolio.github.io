@@ -874,6 +874,7 @@ header {
   font-size: 14px;
   margin: 0;
   margin-right: 5px;
+  padding: 0;
   border: 2px solid #66ef4b;
   border-radius: 50%;
 }
