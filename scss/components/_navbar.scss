@@ -1,5 +1,21 @@
 @use "../abstracts" as *;
 
+/* ? !== <==>Header<==> !== */
+header {
+   position: fixed;
+   top: 0;
+   left: 40vw;
+   @include flexCenter();
+
+   width: 300px;
+   height: 30px;
+   color: $primaryColor;
+   background-color: $secondColor;
+   border-radius: 8px;
+   z-index: 10000;
+}
+/* ? !== <==>End Header<==> !== */
+
 /* ? !== <==>Navbar<==> !== */
 .navbar {
    position: fixed;
