@@ -23,12 +23,7 @@
       margin-top: 50px;
       overflow: auto;
 
-      // &::-webkit-scrollbar {
-      //    display: none;
-      // }
-
       > div {
-         // position: relative;
          top: 0;
          left: 0;
          bottom: 0;
@@ -42,9 +37,25 @@
          box-sizing: border-box;
 
          div {
+            position: relative;
+
             white-space: nowrap;
             padding: 3px 8px;
             border-radius: 5px;
+         }
+
+         .button.active::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            background-color: transparent;
+            border: 2px solid $secondColor;
+            border-radius: 8px;
+            animation: glowEffect 0.5s infinite;
          }
 
          .active {
@@ -58,5 +69,16 @@
       min-height: 150px;
       padding: 10px 15px;
       color: $textColor;
+   }
+}
+
+@keyframes glowEffect {
+   0% {
+   }
+   100% {
+      top: -7px;
+      right: -7px;
+      bottom: -7px;
+      left: -7px;
    }
 }

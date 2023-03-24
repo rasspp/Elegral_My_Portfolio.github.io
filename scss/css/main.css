@@ -354,9 +354,22 @@ header {
   box-sizing: border-box;
 }
 .about-me .container > div div {
+  position: relative;
   white-space: nowrap;
   padding: 3px 8px;
   border-radius: 5px;
+}
+.about-me .container > div .button.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  border: 2px solid #66ef4b;
+  border-radius: 8px;
+  animation: glowEffect 0.5s infinite;
 }
 .about-me .container > div .active {
   color: #18252b;
@@ -368,6 +381,14 @@ header {
   color: aqua;
 }
 
+@keyframes glowEffect {
+  100% {
+    top: -7px;
+    right: -7px;
+    bottom: -7px;
+    left: -7px;
+  }
+}
 /* ? !== <==>Skills<==> !== */
 .skills {
   min-width: 95vw;
@@ -453,7 +474,7 @@ header {
 }
 .contact .container {
   max-width: 700px;
-  padding: 100px 0 200px 0;
+  padding: 120px 0 200px 0;
 }
 .contact .neurlight {
   display: flex;
@@ -735,7 +756,7 @@ header {
   margin-bottom: 20%;
 }
 .portfolio nav {
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 .portfolio nav .nav-link {
   display: flex;
