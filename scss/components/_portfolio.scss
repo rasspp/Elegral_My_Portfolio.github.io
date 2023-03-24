@@ -118,7 +118,7 @@
          padding: 3px !important;
          overflow: hidden;
 
-         img {
+         .thumbnail {
             position: absolute;
 
             min-width: 100%;
@@ -175,10 +175,10 @@
                margin-top: -26px;
             }
 
-            p {
+            .project-skill {
                @include flexCenter();
 
-               min-width: 32px;
+               width: 32px;
                height: 32px;
 
                font-size: 14px;
@@ -186,6 +186,11 @@
                margin-right: 5px;
                border: 2px solid $secondColor;
                border-radius: 50%;
+
+               img {
+                  width: 15px;
+                  height: 15px;
+               }
             }
          }
 
@@ -232,9 +237,6 @@
             top: 2.5px;
 
             animation: titleProject 0.85s;
-         }
-
-         &:hover .text-hover p {
          }
       }
    }
