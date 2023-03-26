@@ -298,6 +298,9 @@ header p {
   box-sizing: border-box;
   overflow: auto;
 }
+.home::-webkit-scrollbar {
+  display: none;
+}
 .home .side-left {
   box-sizing: border-box;
 }

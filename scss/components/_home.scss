@@ -11,6 +11,10 @@
    box-sizing: border-box;
    overflow: auto;
 
+   &::-webkit-scrollbar {
+      display: none;
+   }
+
    .side-left {
       box-sizing: border-box;
    }
